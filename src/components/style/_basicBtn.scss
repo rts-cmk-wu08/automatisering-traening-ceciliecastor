@@ -1,0 +1,13 @@
+@use 'typography' as t; 
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F78065;
+    height: 65px;
+    width: 250px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}

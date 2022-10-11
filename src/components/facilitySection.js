@@ -5,7 +5,7 @@ console.log(facilities.options);
 
 const facilityElm = function () {
   const facilitySec = document.createElement("section");
-  facilitySec.classList.add("advantages", "basic__four-col");
+  facilitySec.classList.add("advantages", "basic__four-col", "section");
   facilitySec.innerHTML = `
       <h2 class="basic__h2 basic__h2--four-col">${facilities.headline}</h2>
   `;

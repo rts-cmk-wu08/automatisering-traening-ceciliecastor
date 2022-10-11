@@ -1,0 +1,13 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid: 1 / 1 / 6 / 2;
+    &__text{
+        background-color: white;
+    }
+    &__img{
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+    }
+}

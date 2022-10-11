@@ -12,8 +12,8 @@ $breakpoints-up: (
 /* ---- SASS MAP FOR DESKTOP FIRST - EMERGENCY ONLY ---- */
 $breakpoints-down: (
     'small': f.em(699.98),
-    'medium': f.em(899.98),
-    'large': f.em(1439.98), 
+    'medium': f.em(799.98),
+    'large': f.em(1139.98), 
 ); 
 
 //create and name mixin with a parameter ($size) 
