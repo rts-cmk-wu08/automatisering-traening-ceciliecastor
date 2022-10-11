@@ -1,0 +1,13 @@
+@use 'breakpoints' as bp; 
+
+.wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+
+    @include bp.breakpoint(medium){
+        max-width: 800px;
+    }
+    @include bp.breakpoint(large){
+        max-width: 1440px;
+    }
+}
