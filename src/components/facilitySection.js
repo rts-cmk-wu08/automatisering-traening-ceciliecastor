@@ -7,7 +7,7 @@ const facilityElm = function () {
   const facilitySec = document.createElement("section");
   facilitySec.classList.add("advantages", "basic__four-col", "section");
   facilitySec.innerHTML = `
-      <h2 class="basic__h2 basic__h2--four-col">${facilities.headline}</h2>
+      <h2 class="h2">${facilities.headline}</h2>
   `;
 
   facilities.options.forEach((data) => {

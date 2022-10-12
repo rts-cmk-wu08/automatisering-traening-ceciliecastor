@@ -1,4 +1,5 @@
 .article{
     display: grid;
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto 1fr 1fr auto;
+    margin-bottom: 3rem;
 }

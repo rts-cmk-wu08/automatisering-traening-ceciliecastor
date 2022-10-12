@@ -1,9 +1,35 @@
+@use 'breakpoints' as bp; 
+
 .header{
     display: grid;
     grid-template-columns: 1fr;
-    grid: 1 / 1 / 6 / 2;
+    &__hero{
+        grid-area: 1 / 1 / 6 / 2;
+        @include bp.breakpoint(medium){
+            grid-area: 1 / 1 / 6 / 2;
+        }
+        @include bp.breakpoint(large){
+            grid-area: 1 / 1 / 6 / 2;
+        }
+    }
     &__text{
         background-color: white;
+        grid-area: 4 / 1 / 10 / 2;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 5%;
+        @include bp.breakpoint(medium){
+            grid-area: 4 / 1 / 10 / 2;
+        }
+        @include bp.breakpoint(large){
+            grid-area: 4 / 1 / 12 / 1;
+            margin: 0 auto 0 4rem;
+            padding: 4rem;
+            max-width: 55%;
+        }
+    }
+    &__p{
+        margin-bottom: 2rem;
     }
     &__img{
         width: 24px;

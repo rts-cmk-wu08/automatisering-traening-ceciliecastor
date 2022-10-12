@@ -9,12 +9,19 @@ $secondaryColor: #A8A8A8;
 $linkColor: #F78065; 
 
 
-.basic__h1{
+.h1{
     font-family: $headingFont;
     color: $primaryColor;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
+    @include bp.breakpoint(medium){
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    @include bp.breakpoint(large){
+        font-size: 2.5rem;
+    }
 }
-.basic__h2{
+.h2{
     font-family: $headingFont;
     color: $primaryColor;
     font-size: 1.2rem;
@@ -28,7 +35,7 @@ $linkColor: #F78065;
         margin-bottom: 6.75rem;
     }
 }
-.basic__h3{
+.h3{
     font-family: $headingFont;
     color: $primaryColor;
     font-size: 1rem;
@@ -74,6 +81,7 @@ a{
     color: $linkColor;
     font-size: 0.8rem;
     font-weight: 700;
+    margin-top: 1rem;
     @include bp.breakpoint(large){
         font-size: 1.125rem;
     }

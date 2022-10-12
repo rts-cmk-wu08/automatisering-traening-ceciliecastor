@@ -1,0 +1,25 @@
+@use 'breakpoints' as bp; 
+
+.sites{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    @include bp.breakpoint(medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include bp.breakpoint(large){
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__article{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 418px 38px 38px;
+        img{
+            height: 100%;
+            width: auto;
+            place-self: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

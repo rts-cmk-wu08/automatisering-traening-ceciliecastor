@@ -6,7 +6,7 @@ const advantagesElm = function () {
   const advantagesSec = document.createElement("section");
   advantagesSec.classList.add("advantages", "basic__three-col", "section");
   advantagesSec.innerHTML = `
-  <h2 class="basic__h2">Our Advantages</h2>
+  <h2 class="h2">Our Advantages</h2>
 `;
   advantages.forEach((data) => {
     advantagesSec.append(iconArticle(data));
